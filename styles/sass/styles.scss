@@ -1,0 +1,27 @@
+// COLOURS:
+// primary text (blue): #084b6d;
+// secondary (light blue): #f4fcff;
+// tertiary (green): #f8fbf3; 
+// quaternary (pink): #fff5f5; 
+// quinary (orange): #ffd698;
+// pastel blue: #d3f0f9 
+// white: #fff; 
+$pricolor: #084b6d;
+$seccolor: #f4fcff;
+$tricolor: #f8fbf3;
+$quacolor: #fff5f5;
+$fiffcolor:#ffd698;
+$blue: #d3f0f9;
+// HEADINGS:
+// h1: 28px;
+// h2: 40px;
+// h3: 54px;
+// h4: 34px;
+// h5: 14px;
+
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
