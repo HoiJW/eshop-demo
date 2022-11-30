@@ -4,7 +4,9 @@
 @use "./partials/base-style";
 @use "./partials/nav.scss";
 @use "./partials/sections.scss";
-@use "./partials/mediaQueries"
+@use "./partials/mediaQueries";
+@use "./partials/header";
+@use "./partials/footer"
 
 // HEADINGS:
 // h1: 28px;

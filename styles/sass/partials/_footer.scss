@@ -1,7 +1,7 @@
-@use "./variables";
+@use "variables" as *;
 
 footer {
-    background-color: $primary;
+    background-color: #084b6d;
     color: $solidWhite;
     padding: 90px 0 50px 0;
     .footerFlexContainer{

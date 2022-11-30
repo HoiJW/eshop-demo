@@ -1,49 +1,68 @@
-@use "./variables";
+@use "variables" as *;
 
 .categoryGallery {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     .items {
-      padding: 45px;
-      margin: 50px 25px 25px;
-      border-radius: 10%;
-      width: 40%;
+        flex-basis: 40%;
+        padding: 45px;
+        margin: 50px 25px 25px;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: 0.5s;
+        img { 
+            max-width: 100%;
+            border-radius: 10%;
+            margin-bottom: 20px;
+        }
+        &:hover {
+            transform: scale(0.95);
+        }
+
+        &:focus {
+            transform: scale(0.95);
+        }
+   
+    }
+    .itemOne {
+        background-color: $quinary;
+    }
+    .itemTwo {
+        background-color: $secondary;
+    }
+    .itemThree {
+        background-color: $tertiary;
+    }
+    .itemFour {
+        background-color: $quaternary;
+    }
+    
+}
+
+  .play {
+    background-image: url(../assets/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  
+    .playContainer {
+      max-width: 650px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      transition: 0.5s;
-      img {
-        width: 100%;
-        border-radius: 10%;
-        margin: 0 auto 20px auto;
-      }
-      &:hover{
-        transform: scale(0.95);
-      }
-      &:focus{
-        transform: scale(0.95);
-      }
-    
+      padding: 70px 45px;
+      border: 24px solid $secondary;
+      background-color: $solidWhite;
     }
   }
-
-  .itemOne{
-    background: variables.$quinary;
-
-  }
-
-  .itemTwo{
-    background: variables.$secondary;
-  }
-
-  .itemThree{
-    background: variables.$tertiary;
-
-  }
-
-  .itemFour{
-    background: variables.$quaternary;
-  }
+  
